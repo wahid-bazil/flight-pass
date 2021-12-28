@@ -1,0 +1,35 @@
+@import './variables/variable.scss';
+body{
+    background-color: #f5f5f5;
+}
+header{
+    padding: 5px;
+    .logo {
+        display: flex;
+        align-items: center;
+        .ram {
+            border-right: $border-primary;
+            margin-right: 2%;
+        }
+        .ram img{
+            width: 100px;
+        }
+        .one-world img {
+            width: 50px;
+        }
+    }
+
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        .btn-sign-in{
+            @extend .button-basic;
+            background-color: black;
+            
+        }
+  
+    }
+ 
+}

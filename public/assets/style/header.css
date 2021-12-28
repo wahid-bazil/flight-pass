@@ -1,0 +1,42 @@
+.btn {
+  border: none;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+header {
+  padding: 5px;
+}
+
+header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo .ram {
+  border-right: 1px solid #7070707d;
+  margin-right: 2%;
+}
+
+header .logo .ram img {
+  width: 100px;
+}
+
+header .logo .one-world img {
+  width: 50px;
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*# sourceMappingURL=header.css.map */
