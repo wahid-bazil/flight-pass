@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+.btn {
+  border: none;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.description {
+  margin-top: 65px;
+  padding: 25px;
+}
+
+.description .section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  -webkit-box-shadow: 1px 1px 13px #0000002e;
+          box-shadow: 1px 1px 13px #0000002e;
+}
+
+.description i {
+  background-color: #d00b41;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  color: white;
+  padding: 4px 8px;
+  font-size: 22px;
+  border-radius: 6px;
+  margin-right: 9px;
+}
+
+.description i svg {
+  position: relative;
+  bottom: 2.5px;
+}
+
+.description h4 {
+  font-family: "Sora", sans-serif;
+  color: #707070;
+  font-weight: bold;
+}
+
+.description p {
+  font-family: "Sora", sans-serif;
+  color: #707070;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.description h2 {
+  font-family: "Sora", sans-serif;
+  font-weight: 300;
+  color: #0d0d0d;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+/*# sourceMappingURL=description.css.map */

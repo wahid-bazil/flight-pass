@@ -1,0 +1,118 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+.btn, .vol-map .details > div .btn-Configurator {
+  border: none;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.vol-map {
+  position: relative;
+}
+
+.vol-map .details {
+  padding: 30px;
+}
+
+.vol-map .details > div {
+  background: #f0eeee;
+}
+
+.vol-map .details > div img {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 120px;
+}
+
+.vol-map .details > div .title {
+  background: #707070;
+  padding: 25px;
+  color: white;
+  font-family: "El Messiri", sans-serif;
+}
+
+.vol-map .details > div .options {
+  padding: 15px;
+}
+
+.vol-map .details > div .options > div {
+  padding-bottom: 25px;
+  border-bottom: 2px dashed #7070708a;
+}
+
+.vol-map .details > div .options > div .label {
+  color: #cf2547;
+  font-size: 23px;
+}
+
+.vol-map .details > div .options > div .text-secondary {
+  color: #666;
+  font-size: 20px;
+}
+
+.vol-map .details > div .options > div i {
+  margin-right: 15px;
+  font-size: 24px;
+}
+
+.vol-map .details > div .options > div span {
+  color: black;
+  margin-right: 15px;
+  font-size: 18px;
+}
+
+.vol-map .details > div .options > div i.air-plan {
+  color: #cf013e;
+}
+
+.vol-map .details > div .options > div i.arrow {
+  color: #cb952b;
+}
+
+.vol-map .details > div ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 10px;
+}
+
+.vol-map .details > div ul i {
+  color: #cb952b;
+}
+
+.vol-map .details > div .btn-Configurator {
+  background-color: #cf2547;
+  color: white;
+  padding: 11px 21px;
+  border-radius: 10px;
+  font-size: 20px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.vol-map .details > div .total {
+  padding-left: 15px;
+  color: #d00b41;
+  font-size: 40px;
+}
+
+.vol-map .details > div .total span {
+  font-size: 70%;
+}
+
+.vol-map .details > div .total::before {
+  content: "À partir de ";
+  color: black;
+  display: block;
+  font-size: 15px;
+  position: relative;
+  left: -5px;
+}
+
+.vol-map .map {
+  padding: 30px;
+}
+/*# sourceMappingURL=map-vol.css.map */

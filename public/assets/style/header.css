@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 .btn {
   border: none;
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
@@ -9,7 +11,7 @@ body {
 }
 
 header {
-  padding: 5px;
+  padding: 10px 5px;
 }
 
 header .logo {
@@ -38,5 +40,24 @@ header ul {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Sora", sans-serif;
+}
+
+header ul .btn-sign-in {
+  background-color: #d00b41;
+  color: white;
+}
+
+header ul .btn-sign-in i {
+  margin-right: 5px;
+  font-size: 21px;
+  position: relative;
+  bottom: 1px;
 }
 /*# sourceMappingURL=header.css.map */

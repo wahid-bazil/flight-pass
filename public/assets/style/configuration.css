@@ -1,0 +1,123 @@
+.configuration form {
+  background: #61374e;
+  -webkit-filter: drop-shadow(4px 4px 24px rgba(0, 0, 0, 0.16));
+          filter: drop-shadow(4px 4px 24px rgba(0, 0, 0, 0.16));
+  padding: 33px 16px;
+  border-radius: 10px;
+}
+
+.configuration form .from-inputs > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.configuration form label {
+  position: absolute;
+  top: 17px;
+  color: white;
+}
+
+.configuration form i {
+  color: white;
+}
+
+.configuration form .btn-submit {
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c20831), to(#f87988));
+  background: linear-gradient(#c20831 0%, #f87988 100%);
+  -webkit-box-shadow: 0px 10px 26px rgba(168, 1, 35, 0.35);
+          box-shadow: 0px 10px 26px rgba(168, 1, 35, 0.35);
+  font-size: 45px;
+  position: relative;
+  bottom: 4px;
+}
+
+.configuration form .btn-submit i {
+  position: relative;
+  bottom: 6.5px;
+}
+
+.configuration form .btn-switch {
+  position: relative;
+  top: 10px;
+}
+
+.configuration form .btn-switch i {
+  font-size: 25px;
+}
+
+.configuration .stepper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configuration .stepper .active-phase {
+  background: #ba182c;
+}
+
+.configuration .stepper .active-phase h6 {
+  color: white !important;
+}
+
+.configuration .stepper .active-phase::after {
+  content: '';
+  position: relative;
+  top: 19px;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #ba182c;
+}
+
+.configuration .stepper .selection img {
+  width: 90%;
+  position: relative;
+  top: 12px;
+}
+
+.configuration .stepper .selection h6 {
+  position: relative;
+  top: 5px;
+}
+
+.configuration .stepper > div {
+  padding: 5px;
+  position: relative;
+}
+
+.configuration .stepper > div > div {
+  border-radius: 9px;
+  background: #b69a6352;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.configuration .stepper > div > div i {
+  color: #b69a63;
+}
+
+.configuration .stepper > div > div h6 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #b69a63;
+}
+/*# sourceMappingURL=configuration.css.map */

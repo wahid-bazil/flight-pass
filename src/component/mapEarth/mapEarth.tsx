@@ -1,6 +1,6 @@
 
 import React from 'react';
-import './App.css';
+
 import {
   ComposableMap,
   Geographies,
@@ -37,11 +37,11 @@ const MapEarth = ()=>{
 
 
     return (
-        <div className='container col-8' >
+        <div className='map' >
         <ComposableMap
           projection="geoEqualEarth"
           projectionConfig={{
-            scale: 420,
+            scale: 300,
             center: [-40, 30]
           }}
         >

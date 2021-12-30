@@ -3,7 +3,7 @@ body{
     background-color: #f5f5f5;
 }
 header{
-    padding: 5px;
+    padding: 10px 5px ;
     .logo {
         display: flex;
         align-items: center;
@@ -18,17 +18,24 @@ header{
             width: 50px;
         }
     }
-
     ul{
         margin: 0;
         padding: 0;
         list-style: none;
-
+        display: flex;
+        align-items: center;
+        font-family: $font-sora;
         .btn-sign-in{
-            @extend .button-basic;
-            background-color: black;
-            
+            background-color: $color-primary;
+            color: white;
+           i{
+                margin-right: 5px;
+                font-size: 21px;
+                position: relative;
+                bottom: 1px;
+           }
         }
+
   
     }
  

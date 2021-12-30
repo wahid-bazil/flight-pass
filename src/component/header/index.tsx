@@ -1,5 +1,5 @@
 import {BiUser} from 'react-icons/bi';
-
+import {BiUserCircle} from 'react-icons/bi';
 function Header() {
     const image = ['./assets/images/logo.png', './assets/images/oneworld-logo.png']
     return (
@@ -22,14 +22,12 @@ function Header() {
                     </li>
                     <li>
                         <button className='btn btn-sign-in'>
-                            <i><BiUser/></i>
+                            <i><BiUserCircle/></i><span>Connexion</span>
                         </button>
                     </li>
                 </ul>
             </div>
-            <div>
 
-            </div>
         </header>
     );
 }

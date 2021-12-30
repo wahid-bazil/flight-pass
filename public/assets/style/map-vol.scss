@@ -1,0 +1,93 @@
+@import './variables/variable.scss';
+.vol-map{
+    position: relative;
+    .details{
+        padding: 30px;
+        
+    }
+    .details > div{
+        background: rgb(240, 238, 238);
+        img{
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            width: 120px;
+        }
+        .title{
+            background: #707070;
+            padding: 25px;
+            color: white;
+            font-family: $font-museo ;
+        }
+        .options{
+            padding: 15px;
+        }
+        .options > div {
+            padding-bottom: 25px;
+            border-bottom: 2px dashed #7070708a;
+            .label{
+                color: #cf2547;
+                font-size: 23px;
+            }
+            .text-secondary{
+                color: #666;
+                font-size: 20px;
+            }
+            i{
+                margin-right: 15px;
+                font-size: 24px;
+            }
+            span{
+                color: black;
+                margin-right: 15px;
+                font-size: 18px;
+            }
+            i.air-plan{
+                color: #cf013e;
+            }
+            i.arrow{
+                color: #cb952b;
+                
+            }
+        }
+        ul{
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        margin-bottom: 10px;
+            i{
+                color: #cb952b;
+            }
+        }
+        .btn-Configurator{
+            @extend .btn;
+            background-color: #cf2547;
+            color: white;
+            padding: 11px 21px;
+            border-radius: 10px;
+            font-size: 20px;
+            height: max-content;
+        }
+        .total{
+            padding-left: 15px;
+            color: #d00b41;
+            font-size: 40px;
+            span{
+                font-size: 70%;
+            }
+        }
+        .total::before{
+            content: "À partir de ";
+            color: black;
+            display: block;
+            font-size: 15px;
+            position: relative;
+            left: -5px;
+        }
+    }
+    .map{
+        padding: 30px;
+    }
+
+   
+}
