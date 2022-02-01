@@ -13,7 +13,6 @@ import { Marker } from "react-simple-maps"
 const geoUrl =
   "https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
 
-
 const markers: {
   markerOffset: number;
   name: string;
@@ -34,8 +33,6 @@ const markers: {
   ]
 
 const MapEarth = ()=>{
-
-
     return (
         <div className='map' >
         <ComposableMap
@@ -45,7 +42,6 @@ const MapEarth = ()=>{
             center: [-40, 30]
           }}
         >
-  
           <Graticule stroke="#DDD" />
           <Geographies
             geography={geoUrl}

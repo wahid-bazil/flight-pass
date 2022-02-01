@@ -1,3 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+.btn {
+  border: none;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.configuration {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
 .configuration form {
   background: #61374e;
   -webkit-filter: drop-shadow(4px 4px 24px rgba(0, 0, 0, 0.16));
@@ -119,5 +132,135 @@
   margin-top: 10px;
   font-size: 18px;
   color: #b69a63;
+}
+
+.configuration .options > div {
+  padding: 15px;
+  position: relative;
+}
+
+.configuration .options .border-right::after {
+  content: "";
+  height: 50%;
+  border-right: 1px solid #d1d1d1;
+  position: absolute;
+  right: 0px;
+  top: 25%;
+}
+
+.configuration .options > div > div {
+  background: transparent;
+  border: 1px solid #d1d1d1;
+  padding: 12px;
+  border-radius: 9px;
+}
+
+.configuration .options .label {
+  border-bottom: 0.25px solid #7070705c;
+}
+
+.configuration .options .value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ba182c24;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  min-height: 50px;
+}
+
+.configuration .options i {
+  font-size: 30px;
+}
+
+.configuration .options i.air-plan {
+  color: #ba182c;
+}
+
+.configuration .options i.arrow-left-right {
+  color: #B69A63;
+}
+
+.configuration .options span {
+  font-family: "Sora", sans-serif;
+  font-weight: 500;
+}
+
+.configuration .options .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.configuration .options .slider i {
+  position: absolute;
+  bottom: 1px;
+}
+
+.configuration .options .slider i.left {
+  left: -15px;
+  bottom: -5px;
+}
+
+.configuration .options .slider i.right {
+  right: -15px;
+  bottom: -5px;
+}
+
+.configuration .options .slider i img {
+  width: 35px;
+}
+
+.configuration .total {
+  font-family: "Sora", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.configuration .total div {
+  border: 1px solid #b59966;
+  -webkit-filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+          filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border-radius: 16px;
+  padding: 33px 15px 0px 16px;
+}
+
+.configuration .total h2 {
+  font-weight: 500;
+  color: black;
+  font-size: 42px;
+  display: inline;
+}
+
+.configuration .total h2::after {
+  content: "1000 MAD/vol";
+  position: relative;
+  bottom: 40px;
+  font-size: 20px !important;
+}
+
+.configuration .total span {
+  font-size: 22px;
 }
 /*# sourceMappingURL=configuration.css.map */

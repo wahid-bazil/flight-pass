@@ -1,19 +1,28 @@
 import ConfigurationIndex from "./component/configuration";
-import ConfigurationForm from "./component/configuration/form";
-import DescriptionIndex from "./component/description";
-import Header from "./component/header";
-import VolMap from "./component/map-vol";
-import MapEarth from "./component/mapEarth/mapEarth";
-import SliderIndex from "./component/slider";
+import ConfigurationOptions from "./component/configuration/options";
+import ConfigurationStepper from "./component/configuration/stepper";
+import HeaderInder from "./component/header";
+import DescriptionIndex from "./component/home/description";
+import MapVolIndex from "./component/home/map-vol";
+import SliderIdex from "./component/home/slider";
+
+
+
+
 
 function App() {
   return (
-    <div className="container App bg-white mt-3">
-      <ConfigurationIndex />
+    <div className="container App  mt-3">
+    {/*  <HeaderInder/>
+      <SliderIdex/>
+      <DescriptionIndex/>
+      <MapVolIndex/>
+    */}
+      < ConfigurationIndex/>
     </div>
-
-
   );
 };
 
+
 export default App;
+

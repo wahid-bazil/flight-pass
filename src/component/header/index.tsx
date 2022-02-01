@@ -1,11 +1,12 @@
-import {BiUser} from 'react-icons/bi';
-import {BiUserCircle} from 'react-icons/bi';
-function Header() {
+import { BiUser } from 'react-icons/bi';
+import { BiUserCircle } from 'react-icons/bi';
+
+const HeaderInder = () => {
     const image = ['./assets/images/logo.png', './assets/images/oneworld-logo.png']
     return (
-        <header className="bg-white ">
+        <header className="bg-white">
             <div className="d-flex justify-content-between align-items-center ">
-                <div className="logo col-6 ">
+                <div className="logo col-6">
                     <div className="ram">
                         <img src={image[0]} />
                     </div>
@@ -22,13 +23,12 @@ function Header() {
                     </li>
                     <li>
                         <button className='btn btn-sign-in'>
-                            <i><BiUserCircle/></i><span>Connexion</span>
+                            <i><BiUserCircle /></i><span>Connexion</span>
                         </button>
                     </li>
                 </ul>
             </div>
-
         </header>
     );
 }
-export default Header
+export default HeaderInder

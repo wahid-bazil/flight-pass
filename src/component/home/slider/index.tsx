@@ -22,7 +22,6 @@ const image = [
 
 
 const SliderIdex = () => {
-
     const [ImageIndex, setImageIndex] = useState<number>(0);
     useEffect(() => {
         console.log(ImageIndex);

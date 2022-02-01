@@ -1,7 +1,6 @@
-import { BiSelectMultiple } from 'react-icons/bi';
-import { HiOutlineIdentification } from 'react-icons/hi';
-import { MdOutlinePayment } from 'react-icons/md';
+
 const active = true;
+
 const ConfigurationStepper = () => {
     return (
         <div className="stepper">
@@ -11,13 +10,13 @@ const ConfigurationStepper = () => {
                     <h6>Sélection</h6>
                 </div>
             </div>
-            <div className="col-4 ">
+            <div className="col-4">
                 <div>
                     <i><img src='./assets/images/Groupe 868.png' /></i>
                     <h6>Informations personnels</h6>
                 </div>
             </div>
-            <div className="col-4 ">
+            <div className="col-4">
                 <div>
                     <i><img src='./assets/images/Untitled-1-04.png' /></i>
                     <h6>Paiement</h6>

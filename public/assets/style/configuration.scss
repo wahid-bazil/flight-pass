@@ -1,10 +1,13 @@
+@import './variables/variable.scss';
 .configuration{
+    padding-top: 25px;
+    padding-bottom: 25px;
     form{
         background: #61374e;
         filter: drop-shadow(4px 4px 24px rgba(0, 0, 0, 0.16));
         padding: 33px 16px;
         border-radius: 10px;
-        .from-inputs>div{
+        .from-inputs > div{
             display: flex;
             align-items: center;
             padding: 10px;
@@ -35,7 +38,6 @@
             top: 10px;
             i{
                 font-size: 25px;
-               
             }
         }
 
@@ -93,4 +95,107 @@
             color: #b69a63;;
         }
     }
+    .options > div {
+        padding: 15px;
+        position: relative;
+    }
+
+    .options .border-right::after{
+        content: "";
+        height: 50%;
+        border-right: 1px solid #d1d1d1;
+        position: absolute;
+        right: 0px;
+        top: 25%;
+    }
+    .options > div > div {
+        background: transparent;
+        border: 1px solid #d1d1d1;
+        padding: 12px;
+        border-radius: 9px;
+    }
+    .options {
+        .label{
+            border-bottom: 0.25px solid #7070705c;
+        }
+        .value{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #ba182c24;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 10px;
+            margin-top: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            min-height: 50px;
+        }
+        i{
+            font-size: 30px;
+        }
+        i.air-plan{
+            color: #ba182c;
+        }
+        i.arrow-left-right{
+            color: #B69A63;
+        }
+        span{
+            font-family: $font-sora;
+            font-weight: 500;
+        }
+        .slider{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            i{
+                position: absolute;
+                bottom: 1px;
+            }
+            i.left{
+                left: -15px;
+                bottom: -5px;
+            }
+            i.right{
+                right:-15px;
+                bottom: -5px;
+            }
+            i img {
+                width:35px;
+            }
+        }
+
+    }
+    .total{
+        font-family: $font-sora;
+        display: flex;
+        justify-content: end;
+        div{
+            border: 1px solid #b59966;
+            filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+            height: max-content;
+            border-radius: 16px;
+            padding: 33px 15px 0px 16px;
+        }
+        h2{
+            font-weight: 500;
+            color: black;
+            font-size: 42px;
+            display: inline;
+        }
+        h2::after{
+            content: "1000 MAD/vol";
+            position: relative;
+            bottom: 40px;
+            font-size: 20px!important;
+            
+         }
+        span{
+            font-size: 22px;    
+        }
+        
+    }
+
+
+
 }

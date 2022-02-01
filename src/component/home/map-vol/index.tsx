@@ -1,11 +1,10 @@
 import { GiAirplaneArrival } from "react-icons/gi";
-import { MdOutlineArrowRightAlt } from "react-icons/md";
 import { RiArrowLeftRightLine } from "react-icons/ri";
 import { GiAirplaneDeparture } from "react-icons/gi";
 import { RiSendPlane2Line } from "react-icons/ri";
-import MapEarth from "../mapEarth/mapEarth";
-const VolMap = () => {
+import MapEarth from "./mapEarth";
 
+const MapVolIndex = () => {
     return (
         <div className="vol-map">
             <div className="row">
@@ -78,4 +77,4 @@ const VolMap = () => {
 
     )
 }
-export default VolMap
+export default MapVolIndex
