@@ -1,0 +1,312 @@
+@import "./variable";
+.configuration {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    .form-date {
+        background: #61374e;
+        filter: drop-shadow(4px 4px 24px rgba(0, 0, 0, 0.16));
+        padding: 33px 16px;
+        border-radius: 10px;
+        .from-inputs > div {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        label {
+            position: absolute;
+            top: 17px;
+            color: white;
+        }
+        i {
+            color: white;
+        }
+        .btn-submit {
+            border-radius: 10px;
+            background: linear-gradient(#c20831 0%, #f87988 100%);
+            box-shadow: 0px 10px 26px rgba(168, 1, 35, 0.35);
+            font-size: 45px;
+            position: relative;
+            bottom: 4px;
+            i {
+                position: relative;
+                bottom: 6.5px;
+            }
+        }
+        .btn-switch {
+            position: relative;
+            top: 10px;
+            i {
+                font-size: 25px;
+            }
+        }
+    }
+    .stepper {
+        display: flex;
+        .active-phase {
+            background: #ba182c;
+            h6 {
+                color: white !important;
+            }
+        }
+        .active-phase::after {
+            content: "";
+            position: relative;
+            top: 19px;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 20px solid #ba182c;
+        }
+        .selection {
+            img {
+                width: 90%;
+                position: relative;
+                top: 12px;
+            }
+            h6 {
+                position: relative;
+                top: 5px;
+            }
+        }
+    }
+    .stepper > div {
+        padding: 5px;
+        position: relative;
+    }
+    .stepper > div > div {
+        border-radius: 9px;
+        background: #b69a6352;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        i {
+            color: #b69a63;
+        }
+        h6 {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #b69a63;
+        }
+    }
+    .options > div {
+        padding: 15px;
+        position: relative;
+    }
+
+    .options .border-right::after {
+        content: "";
+        height: 50%;
+        border-right: 1px solid #d1d1d1;
+        position: absolute;
+        right: 0px;
+        top: 25%;
+    }
+    .options > div > div {
+        background: transparent;
+        border: 1px solid #d1d1d1;
+        padding: 12px;
+        border-radius: 9px;
+    }
+    .options {
+        .cust-select {
+            .select-container {
+                position: relative;
+                height: max-content;
+                .value {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-family: $font-museo;
+                    padding-left: 3px;
+                    .icon-label {
+                        svg {
+                            position: relative;
+                        }
+                    }
+                    .label {
+                        position: relative;
+                    }
+                    button {
+                        background-color: transparent;
+                        border: none;
+                        .icon-down {
+                        }
+                    }
+                }
+                .items {
+                    position: absolute;
+                    z-index: 1001;
+                    top: 106%;
+                    background-color: #F9ECED;
+                    border: 2px solid black;
+                    min-width: 100%;
+                    max-height: 250px;
+                    left: 0px;
+                    overflow-y: scroll;
+                    transition: all 0.25s ease-in-out;
+                    -webkit-transition: all 0.25s ease-in-out;
+                    -moz-transition: all 0.25s ease-in-out;
+                    -o-transition: all 0.25s ease-in-out;
+                    transition: all 0.25s ease-in-out;
+                    font-family: $font-museo;
+                    border-radius: 5px;
+                    ul {
+                        list-style: none;
+                        text-align: start;
+                        padding: 0px;
+                        margin: 0px;
+
+                        li {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            border-bottom: 1px solid #aaa;
+                            padding-bottom: 6px;
+                            padding-top: 6px;
+                            i.air-plan {
+                                padding: 0 1% 0 1%;
+                                svg {
+                                    width: 1.8vmax;
+                                }
+                            }
+                            i.arrow {
+                                padding: 0 1% 0 1%;
+                                position: relative;
+                                right: 1%;
+                                svg {
+                                    width: 1.8vmax;
+                                }
+                            }
+                            span {
+                                padding: 0 1% 0 1%;
+                                font-size: 0.9vmax;
+                                width: 100%;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+                .items.closed {
+                    -webkit-transition: all 0.25s ease-in-out;
+                    -moz-transition: all 0.25s ease-in-out;
+                    -o-transition: all 0.25s ease-in-out;
+                    transition: all 0.25s ease-in-out;
+                    opacity: 0;
+                    padding: 0;
+                    display: none;
+                }
+            }
+        }
+        .label {
+            border-bottom: 0.25px solid #7070705c;
+        }
+        .value {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #ba182c24;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 10px;
+            margin-top: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            min-height: 50px;
+        }
+        i {
+            font-size: 30px;
+        }
+        i.air-plan {
+            color: #ba182c;
+        }
+        i.arrow-left-right {
+            color: #b69a63;
+        }
+        span {
+            font-family: $font-sora;
+            font-weight: 500;
+        }
+        .slider {
+            
+        }
+    }
+    .total {
+        font-family: $font-sora;
+        display: flex;
+        justify-content: end;
+        div {
+            border: 1px solid #b59966;
+            filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+            height: max-content;
+            border-radius: 16px;
+            padding: 33px 15px 0px 16px;
+        }
+        h2 {
+            font-weight: 500;
+            color: black;
+            font-size: 42px;
+            display: inline;
+        }
+        h2::after {
+            content: "1000 MAD/vol";
+            position: relative;
+            bottom: 40px;
+            font-size: 20px !important;
+        }
+        span {
+            font-size: 22px;
+        }
+    }
+    .formContact {
+        display: block;
+        margin: auto;
+        border-radius: 9px;
+        border: 1px solid #d1d1d1;
+        padding: 24px;
+        background-color: white;
+        h6 {
+            font-family: $font-sora;
+            font-weight: 600;
+            text-align: left;
+            color: #0d0d0d;
+            opacity: 0.9;
+        }
+        span.warning {
+            font-family: $font-sora;
+            font-weight: normal;
+            text-align: left;
+            color: #ba182c;
+        }
+        .field {
+            position: relative;
+            input {
+                border-radius: 9px;
+                background: #fcfcfc;
+                border: 0.25px solid #707070;
+                padding: 13px;
+                margin-top: 56px !important;
+                width: 100%;
+                display: block;
+                margin: auto;
+            }
+            label {
+                font-family: $font-sora;
+                font-weight: normal;
+                text-align: left;
+                position: absolute;
+                bottom: 52px;
+            }
+            i {
+                position: absolute;
+                right: 7px;
+                top: 25%;
+                img {
+                    width: 30px;
+                }
+            }
+        }
+    }
+}

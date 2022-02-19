@@ -1,0 +1,1226 @@
+@import "./variable";
+
+.segmentDescription {
+  background-color: white;
+  margin-top: 35px;
+  padding-bottom: 15px;
+
+  h4 {
+    margin-left: 8px;
+    font-family: $font-sora;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  .options {
+    position: relative;
+    background: rgb(188 188 188 / 20%);
+    .circularProgress {
+      position: absolute;
+      z-index: 1001;
+      top: 50%;
+      left: 45%;
+    }
+    .load {
+      opacity: 0.4;
+    }
+    .title {
+      border-radius: 8px 8px 0px 0px;
+      background: #606060;
+      color: white;
+      font-family: $font-museo;
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 10vh;
+      padding-left: 7px;
+
+      img {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+      }
+
+      h4 {
+        font-weight: 400;
+        position: relative;
+        top: 8px;
+      }
+    }
+
+    .options-fixes {
+      .label {
+        margin-top: 21px;
+        font-family: $font-museo;
+
+        .main {
+          color: #cf2547;
+        }
+
+        .secondary {
+          color: #666;
+        }
+      }
+
+      .segment-container {
+        .segment {
+          display: flex;
+          .air-port {
+            display: flex;
+            align-items: center;
+            max-width: 45%;
+            width: max-content;
+            overflow: auto;
+            border: 0.25px solid #707070;
+            border-radius: 8px;
+            .air-plan {
+              svg {
+                position: relative;
+              }
+            }
+            .icon-down {
+              color: #707070;
+            }
+          }
+          .air-port-list {
+            display: flex;
+            align-items: center;
+            border: 0.25px solid #707070;
+            border-radius: 8px;
+            max-width: 45%;
+            .cust-select {
+              .select-container {
+                position: relative;
+                height: max-content;
+                .value {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  font-family: $font-museo;
+                  padding-left: 3px;
+                  .icon-label {
+                    svg {
+                      position: relative;
+                    }
+                  }
+                  .label {
+                    position: relative;
+                  }
+                  button {
+                    background-color: transparent;
+                    border: none;
+                    .icon-down {
+                    }
+                  }
+                }
+                .items {
+                  position: absolute;
+                  background-color: #f5f5f5;
+                  border: 1px solid #aaa;
+                  width: 190px;
+                  height: 250px;
+                  left: 0px;
+                  overflow-y: scroll;
+                  transition: all 0.25s ease-in-out;
+                  padding: 0 10px 0px 10px;
+                  -webkit-transition: all 0.25s ease-in-out;
+                  -moz-transition: all 0.25s ease-in-out;
+                  -o-transition: all 0.25s ease-in-out;
+                  transition: all 0.25s ease-in-out;
+                  font-family: $font-museo;
+                  ul {
+                    list-style: none;
+                    text-align: start;
+                    padding: 0px;
+                    margin: 0px;
+                    padding-left: 3%;
+                    li {
+                      border-bottom: 1px solid #aaa;
+                      padding-bottom: 6px;
+                      padding-top: 6px;
+                    }
+                  }
+                }
+                .items.closed {
+                  -webkit-transition: all 0.25s ease-in-out;
+                  -moz-transition: all 0.25s ease-in-out;
+                  -o-transition: all 0.25s ease-in-out;
+                  transition: all 0.25s ease-in-out;
+                  opacity: 0;
+                  padding: 0;
+                }
+              }
+            }
+          }
+
+          .arrow {
+            color: #cb952b;
+            display: flex;
+            align-items: center;
+          }
+        }
+
+        .text-secondary {
+          font-family: $font-museo;
+
+          span {
+            color: black;
+            position: relative;
+          }
+        }
+      }
+    }
+
+    .options-to-choose {
+      .label {
+        .main {
+          color: #cf2547;
+        }
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+          font-family: $font-museo;
+          color: #000;
+
+          i {
+            color: #cb952b;
+          }
+        }
+      }
+    }
+
+    .price {
+      margin-top: 15px;
+      display: flex;
+      justify-content: space-between;
+
+      button {
+        background-color: #cf2547;
+        color: white;
+        font-family: $font-museo;
+        border: none;
+        border-radius: 5px;
+      }
+
+      .base-price {
+        color: #d00b41;
+      }
+
+      .base-price::before {
+        content: "À partir de";
+        color: black;
+        position: absolute;
+      }
+    }
+  }
+  .map {
+    border: 2.5px solid #707070;
+    padding: 2px;
+    height: 100%;
+    width: 100%;
+    svg {
+      height: 100%;
+      width: 100%;
+    }
+    .marker {
+      g {
+        svg {
+          font-size: 28px;
+          color: #D00B41;
+        }
+      }
+      text {
+        font-size: 19px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  @media screen and (max-width: 250px) {
+    padding-left: 3px;
+    padding-right: 3px;
+    h4 {
+      font-size: 15px;
+    }
+    .options {
+      .title {
+        h4 {
+          font-size: 17px;
+        }
+
+        img {
+          width: 70px;
+        }
+      }
+
+      .options-fixes {
+        .label {
+          padding-left: 3px;
+          margin-bottom: 8px;
+
+          .main {
+            font-size: 14px;
+          }
+
+          .secondary {
+            font-size: 14px;
+          }
+        }
+
+        .segment-container {
+          padding-left: 4px;
+          padding-right: 4px;
+
+          .segment {
+            margin-bottom: 15px;
+
+            .arrow {
+              font-size: 20px;
+            }
+
+            .air-port {
+              padding: 4px;
+              border-radius: 4px;
+              span {
+                font-size: 11px;
+              }
+            }
+          }
+
+          .text-secondary {
+            font-size: 12px;
+            margin-bottom: 16px;
+          }
+        }
+      }
+
+      .options-to-choose {
+        .label {
+          .main {
+            font-size: 14px;
+          }
+        }
+
+        ul {
+          padding: 4px;
+
+          li {
+            margin-top: 4px;
+            font-size: 12px;
+
+            i {
+              margin-right: 2px;
+              position: relative;
+              bottom: 0.5px;
+            }
+          }
+        }
+      }
+
+      .price {
+        padding-left: 7px;
+        padding-right: 7px;
+
+        button {
+          padding: 5px 10px 5px 10px;
+          font-size: 14px;
+        }
+
+        .base-price {
+          font-size: 20px;
+        }
+
+        .base-price::before {
+          font-size: 11.5px;
+          bottom: 26px;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 250px) and (max-width: 300px) {
+    padding-left: 3px;
+    padding-right: 3px;
+    h4 {
+      font-size: 18px;
+    }
+    .options {
+      .title {
+        h4 {
+          font-size: 20px;
+        }
+
+        img {
+          width: 70px;
+        }
+      }
+
+      .options-fixes {
+        .label {
+          padding-left: 3px;
+          margin-bottom: 8px;
+
+          .main {
+            font-size: 17px;
+          }
+
+          .secondary {
+            font-size: 16px;
+          }
+        }
+
+        .segment-container {
+          padding-left: 4px;
+          padding-right: 4px;
+
+          .segment {
+            margin-bottom: 15px;
+
+            .air-plan {
+              font-size: 17px;
+            }
+
+            .arrow {
+              font-size: 20px;
+            }
+
+            .air-port {
+              padding: 4px;
+              border-radius: 4px;
+
+              span {
+                font-size: 12px;
+                top: 1.5px;
+              }
+            }
+          }
+
+          .text-secondary {
+            font-size: 15px;
+            margin-bottom: 16px;
+          }
+        }
+      }
+
+      .options-to-choose {
+        .label {
+          .main {
+            font-size: 17px;
+          }
+        }
+
+        ul {
+          padding: 4px;
+
+          li {
+            margin-top: 4px;
+            font-size: 14.5px;
+
+            i {
+              margin-right: 2px;
+              position: relative;
+              bottom: 0.5px;
+            }
+          }
+        }
+      }
+
+      .price {
+        padding-left: 7px;
+        padding-right: 7px;
+
+        button {
+          padding: 5px 17px 5px 17px;
+          font-size: 16px;
+        }
+
+        .base-price {
+          font-size: 23px;
+        }
+
+        .base-price::before {
+          font-size: 11.5px;
+          bottom: 26px;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 300px) and (max-width: 430px) {
+    padding-left: 11px;
+    padding-right: 11px;
+    h4 {
+      font-size: 18px;
+    }
+    .options {
+      .title {
+        h4 {
+          font-size: 22px;
+        }
+
+        img {
+          width: 80px;
+        }
+      }
+
+      .options-fixes {
+        .label {
+          padding-left: 3px;
+          margin-bottom: 8px;
+
+          .main {
+            font-size: 18.5px;
+          }
+
+          .secondary {
+            font-size: 17px;
+          }
+        }
+
+        .segment-container {
+          padding-left: 4px;
+          padding-right: 4px;
+
+          .segment {
+            margin-bottom: 15px;
+
+            .air-plan {
+              font-size: 20px;
+            }
+
+            .arrow {
+              font-size: 20px;
+            }
+
+            .air-port {
+              padding: 4px;
+              border-radius: 4px;
+
+              span {
+                font-size: 14px;
+                top: 1.5px;
+              }
+            }
+          }
+
+          .text-secondary {
+            font-size: 15.5px;
+            margin-bottom: 16px;
+          }
+        }
+      }
+
+      .options-to-choose {
+        .label {
+          .main {
+            font-size: 18.5px;
+          }
+        }
+
+        ul {
+          padding: 4px;
+
+          li {
+            margin-top: 4px;
+            font-size: 15px;
+
+            i {
+              margin-right: 2px;
+              position: relative;
+              bottom: 0.5px;
+            }
+          }
+        }
+      }
+
+      .price {
+        padding-left: 7px;
+        padding-right: 7px;
+
+        button {
+          padding: 5px 23px 5px 23px;
+          font-size: 16px;
+        }
+
+        .base-price {
+          font-size: 24px;
+        }
+
+        .base-price::before {
+          font-size: 11.5px;
+          bottom: 26px;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 430px) and (max-width: 568px) {
+    padding-left: 11px;
+    padding-right: 11px;
+    .options {
+      .title {
+        h4 {
+          font-size: 24px;
+        }
+
+        img {
+          width: 87px;
+        }
+      }
+
+      .options-fixes {
+        .label {
+          padding-left: 3px;
+
+          .main {
+            font-size: 20.5px;
+          }
+
+          .secondary {
+            font-size: 19px;
+          }
+        }
+
+        .segment-container {
+          padding-left: 4px;
+          padding-right: 4px;
+
+          .segment {
+            margin-bottom: 19px;
+
+            .air-plan {
+              font-size: 25px;
+            }
+
+            .arrow {
+              font-size: 28px;
+            }
+
+            .air-port {
+              padding: 4px;
+              border-radius: 4px;
+              span {
+                font-size: 16px;
+                top: 1.5px;
+              }
+
+              .icon-down {
+                font-size: 19px;
+              }
+            }
+          }
+          .text-secondary {
+            font-size: 18.5px;
+            margin-top: 14px;
+            padding-left: 11px;
+          }
+        }
+      }
+
+      .options-to-choose {
+        .label {
+          .main {
+            font-size: 20.5px;
+          }
+        }
+        ul {
+          padding: 4px;
+
+          li {
+            margin-top: 4px;
+            font-size: 16px;
+            padding-left: 11px;
+
+            i {
+              margin-right: 2px;
+              position: relative;
+              bottom: 0.5px;
+            }
+          }
+        }
+      }
+      .price {
+        padding-left: 7px;
+        padding-right: 7px;
+        button {
+          padding: 7px 35px 7px 35px;
+          font-size: 19px;
+        }
+        .base-price {
+          font-size: 30px;
+        }
+        .base-price::before {
+          font-size: 13px;
+          bottom: 37px;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 568px) and (max-width: 768px) {
+    padding-left: 11px;
+    padding-right: 11px;
+    .options {
+      .title {
+        h4 {
+          font-size: 26px;
+        }
+
+        img {
+          width: 102px;
+        }
+      }
+      .options-fixes {
+        .label {
+          padding-left: 3px;
+
+          .main {
+            font-size: 22.5px;
+          }
+
+          .secondary {
+            font-size: 20px;
+          }
+        }
+        .segment-container {
+          padding-left: 4px;
+          padding-right: 4px;
+
+          .segment {
+            margin-bottom: 19px;
+            padding-right: 23%;
+
+            .air-plan {
+              font-size: 25px;
+            }
+
+            .arrow {
+              font-size: 28px;
+            }
+
+            .air-port {
+              border-radius: 4px;
+
+              span {
+                font-size: 16px;
+                top: 1.5px;
+              }
+
+              .icon-down {
+                font-size: 19px;
+              }
+            }
+          }
+          .text-secondary {
+            font-size: 20.5px;
+            margin-top: 14px;
+            padding-left: 11px;
+          }
+        }
+      }
+      .options-to-choose {
+        .label {
+          .main {
+            font-size: 22.5px;
+          }
+        }
+        ul {
+          padding: 4px;
+
+          li {
+            margin-top: 4px;
+            font-size: 17.5px;
+            padding-left: 11px;
+
+            i {
+              margin-right: 2px;
+              position: relative;
+              bottom: 0.5px;
+            }
+          }
+        }
+      }
+      .price {
+        padding-left: 7px;
+        padding-right: 7px;
+
+        button {
+          padding: 7px 45px 7px 45px;
+          font-size: 19px;
+        }
+        .base-price {
+          font-size: 30px;
+        }
+        .base-price::before {
+          font-size: 13px;
+          bottom: 37px;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    margin-top: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+    h4 {
+      font-size: 20px;
+    }
+    .options {
+      .title {
+        h4 {
+          font-size: 22px;
+        }
+        img {
+          width: 26%;
+        }
+      }
+      .options-fixes {
+        .label {
+          padding-left: 3px;
+          margin-bottom: 8px;
+
+          .main {
+            font-size: 18.5px;
+          }
+
+          .secondary {
+            font-size: 17px;
+          }
+        }
+
+        .segment-container {
+          padding-left: 4px;
+          padding-right: 4px;
+
+          .segment {
+            margin-bottom: 15px;
+            padding-right: 17%;
+            .arrow {
+              svg {
+                width: 26px;
+                margin-left: 8px;
+                margin-right: 8px;
+              }
+            }
+            .air-port {
+              padding-left: 16px;
+              padding-top: 1px;
+              padding-bottom: 1px;
+              .air-plan {
+                svg {
+                  width: 26px;
+                  right: 12px;
+                }
+              }
+              span {
+                font-size: 12px;
+              }
+              .icon-down {
+                left: 12px;
+              }
+            }
+            .air-port-list {
+              .cust-select {
+                .select-container {
+                  .value {
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                    .icon-label {
+                      svg {
+                        width: 26px;
+                      }
+                    }
+                    .label {
+                      font-size: 12px;
+                      bottom: 6px;
+                    }
+                    .icon-down {
+                    }
+                  }
+                  .items {
+                    top: 107%;
+                    ul {
+                      li {
+                        font-size: 13px;
+                      }
+                    }
+                  }
+                  .items.closed {
+                  }
+                }
+              }
+            }
+          }
+
+          .text-secondary {
+            font-size: 15.5px;
+            margin-bottom: 16px;
+          }
+        }
+      }
+
+      .options-to-choose {
+        .label {
+          .main {
+            font-size: 18.5px;
+          }
+        }
+
+        ul {
+          padding: 4px;
+
+          li {
+            margin-top: 4px;
+            font-size: 15px;
+
+            i {
+              margin-right: 2px;
+              position: relative;
+              bottom: 0.5px;
+            }
+          }
+        }
+      }
+
+      .price {
+        padding-left: 7px;
+        padding-right: 7px;
+
+        button {
+          padding: 5px 23px 5px 23px;
+          font-size: 16px;
+        }
+
+        .base-price {
+          font-size: 24px;
+        }
+
+        .base-price::before {
+          font-size: 11.5px;
+          bottom: 26px;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+    margin-top: 80px;
+    margin-left: 29px;
+    margin-right: 29px;
+    h4 {
+      font-size: 20px;
+    }
+    .options {
+      .title {
+        h4 {
+          font-size: 22px;
+        }
+
+        img {
+          width: 26%;
+        }
+      }
+
+      .options-fixes {
+        padding-left: 5px;
+        .label {
+          padding-left: 3px;
+          margin-bottom: 8px;
+
+          .main {
+            font-size: 18.5px;
+          }
+
+          .secondary {
+            font-size: 17px;
+          }
+        }
+
+        .segment-container {
+          padding-left: 4px;
+          padding-right: 4px;
+
+          .segment {
+            margin-bottom: 21px;
+
+            .arrow {
+              svg {
+                width: 26px;
+                margin-left: 8px;
+                margin-right: 8px;
+              }
+            }
+            .air-port {
+              padding-left: 20px;
+              padding-right: 20px;
+              padding-top: 3px;
+              padding-bottom: 3px;
+              .air-plan {
+                svg {
+                  width: 35px;
+                  position: relative;
+                  right: 12px;
+                }
+              }
+              span {
+                font-size: 13px;
+              }
+              .icon-down {
+                position: relative;
+                left: 12px;
+              }
+            }
+            .air-port-list {
+              .cust-select {
+                .select-container {
+                  .value {
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                    .icon-label {
+                      svg {
+                        width: 26px;
+                      }
+                    }
+                    .label {
+                      font-size: 13px;
+                      bottom: 6px;
+                    }
+                    .icon-down {
+                    }
+                  }
+                  .items {
+                    top: 125%;
+                    ul {
+                      li {
+                        font-size: 13px;
+                      }
+                    }
+                  }
+                  .items.closed {
+                  }
+                }
+              }
+            }
+          }
+
+          .text-secondary {
+            font-size: 15.5px;
+            margin-bottom: 16px;
+          }
+        }
+      }
+      .options-to-choose {
+        padding-left: 5px;
+        .label {
+          .main {
+            font-size: 18.5px;
+          }
+        }
+
+        ul {
+          padding: 4px;
+
+          li {
+            margin-top: 4px;
+            font-size: 15px;
+
+            i {
+              margin-right: 2px;
+              position: relative;
+              bottom: 0.5px;
+            }
+          }
+        }
+      }
+      .price {
+        padding-left: 7px;
+        padding-right: 7px;
+
+        button {
+          padding: 5px 23px 5px 23px;
+          font-size: 16px;
+        }
+
+        .base-price {
+          font-size: 24px;
+        }
+
+        .base-price::before {
+          font-size: 11.5px;
+          bottom: 26px;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 80px;
+    margin-left: 63px;
+    margin-right: 63px;
+    h4 {
+      font-size: 20px;
+    }
+    .options {
+      .title {
+        h4 {
+          font-size: 22px;
+        }
+
+        img {
+          width: 26%;
+        }
+      }
+
+      .options-fixes {
+        padding-left: 5px;
+        .label {
+          padding-left: 3px;
+          margin-bottom: 8px;
+
+          .main {
+            font-size: 18.5px;
+          }
+
+          .secondary {
+            font-size: 17px;
+          }
+        }
+
+        .segment-container {
+          padding-left: 4px;
+          padding-right: 4px;
+
+          .segment {
+            margin-bottom: 21px;
+
+            .arrow {
+              svg {
+                width: 26px;
+                margin-left: 8px;
+                margin-right: 8px;
+              }
+            }
+            .air-port {
+              padding-left: 20px;
+              padding-right: 20px;
+              padding-top: 3px;
+              padding-bottom: 3px;
+              .air-plan {
+                svg {
+                  width: 35px;
+                  position: relative;
+                  right: 12px;
+                }
+              }
+              span {
+                font-size: 13px;
+              }
+              .icon-down {
+                position: relative;
+                left: 12px;
+              }
+            }
+            .air-port-list {
+              .cust-select {
+                .select-container {
+                  .value {
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                    .icon-label {
+                      svg {
+                        width: 26px;
+                      }
+                    }
+                    .label {
+                      font-size: 13px;
+                      bottom: 6px;
+                    }
+                    .icon-down {
+                    }
+                  }
+                  .items {
+                    top: 115%;
+                    ul {
+                      li {
+                        font-size: 14px;
+                      }
+                    }
+                  }
+                  .items.closed {
+                  }
+                }
+              }
+            }
+          }
+
+          .text-secondary {
+            font-size: 15.5px;
+            margin-bottom: 16px;
+          }
+        }
+      }
+      .options-to-choose {
+        padding-left: 5px;
+        .label {
+          .main {
+            font-size: 18.5px;
+          }
+        }
+
+        ul {
+          padding: 4px;
+
+          li {
+            margin-top: 4px;
+            font-size: 15px;
+
+            i {
+              margin-right: 2px;
+              position: relative;
+              bottom: 0.5px;
+            }
+          }
+        }
+      }
+      .price {
+        padding-left: 7px;
+        padding-right: 7px;
+
+        button {
+          padding: 5px 23px 5px 23px;
+          font-size: 16px;
+        }
+
+        .base-price {
+          font-size: 24px;
+        }
+
+        .base-price::before {
+          font-size: 11.5px;
+          bottom: 26px;
+        }
+      }
+    }
+  }
+  /********************/
+  @media screen and (max-width: 200px) {
+    .segment {
+      flex-direction: column;
+      align-items: center;
+
+      .air-port {
+        width: 70% !important;
+      }
+    }
+    .price {
+      flex-direction: column-reverse;
+
+      .base-price {
+        margin-bottom: 25px;
+      }
+
+      .base-price::before {
+        font-size: 11.5px;
+        bottom: 80px !important;
+      }
+    }
+  }
+}

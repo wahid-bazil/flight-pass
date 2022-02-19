@@ -1,0 +1,1016 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dongle&family=Hind+Siliguri:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dongle&family=Hind+Siliguri:wght@300;400;500;600&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+.btn {
+  border: none;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.segmentDescription {
+  background-color: white;
+  margin-top: 35px;
+  padding-bottom: 15px;
+  /********************/
+}
+
+.segmentDescription h4 {
+  margin-left: 8px;
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.segmentDescription .options {
+  background: rgba(245, 245, 245, 0.33);
+  -webkit-filter: drop-shadow(0px 10px 13px rgba(0, 0, 0, 0.16));
+          filter: drop-shadow(0px 10px 13px rgba(0, 0, 0, 0.16));
+}
+
+.segmentDescription .options .title {
+  border-radius: 8px 8px 0px 0px;
+  background: #707070;
+  color: white;
+  font-family: "Hind Siliguri", sans-serif;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
+  padding-left: 7px;
+}
+
+.segmentDescription .options .title img {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.segmentDescription .options .title h4 {
+  font-weight: 400;
+  position: relative;
+  top: 8px;
+}
+
+.segmentDescription .options .options-fixes .label {
+  margin-top: 21px;
+  font-family: "Hind Siliguri", sans-serif;
+}
+
+.segmentDescription .options .options-fixes .label .main {
+  color: #cf2547;
+}
+
+.segmentDescription .options .options-fixes .label .secondary {
+  color: #666;
+}
+
+.segmentDescription .options .options-fixes .segment-container .segment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.segmentDescription .options .options-fixes .segment-container .segment .air-port {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 45%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  overflow: auto;
+  border: 0.25px solid #707070;
+  border-radius: 8px;
+}
+
+.segmentDescription .options .options-fixes .segment-container .segment .air-port .air-plan svg {
+  position: relative;
+}
+
+.segmentDescription .options .options-fixes .segment-container .segment .air-port .icon-down {
+  color: #707070;
+}
+
+.segmentDescription .options .options-fixes .segment-container .segment .air-port-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 0.25px solid #707070;
+  border-radius: 8px;
+  max-width: 45%;
+}
+
+.segmentDescription .options .options-fixes .segment-container .segment .air-port-list .cust-select .select-container {
+  position: relative;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.segmentDescription .options .options-fixes .segment-container .segment .air-port-list .cust-select .select-container .value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Hind Siliguri", sans-serif;
+  padding-left: 3px;
+}
+
+.segmentDescription .options .options-fixes .segment-container .segment .air-port-list .cust-select .select-container .value .icon-label svg {
+  position: relative;
+}
+
+.segmentDescription .options .options-fixes .segment-container .segment .air-port-list .cust-select .select-container .value .label {
+  position: relative;
+}
+
+.segmentDescription .options .options-fixes .segment-container .segment .air-port-list .cust-select .select-container .value button {
+  background-color: transparent;
+  border: none;
+}
+
+.segmentDescription .options .options-fixes .segment-container .segment .air-port-list .cust-select .select-container .items {
+  position: absolute;
+  background-color: #f5f5f5;
+  border: 1px solid #aaa;
+  width: 190px;
+  height: 250px;
+  left: 0px;
+  overflow-y: scroll;
+  transition: all 0.25s ease-in-out;
+  padding: 0 10px 0px 10px;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  font-family: "Hind Siliguri", sans-serif;
+}
+
+.segmentDescription .options .options-fixes .segment-container .segment .air-port-list .cust-select .select-container .items ul {
+  list-style: none;
+  text-align: start;
+  padding: 0px;
+  margin: 0px;
+  padding-left: 3%;
+}
+
+.segmentDescription .options .options-fixes .segment-container .segment .air-port-list .cust-select .select-container .items ul li {
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 6px;
+  padding-top: 6px;
+}
+
+.segmentDescription .options .options-fixes .segment-container .segment .air-port-list .cust-select .select-container .items.closed {
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  opacity: 0;
+  padding: 0;
+}
+
+.segmentDescription .options .options-fixes .segment-container .segment .arrow {
+  color: #cb952b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.segmentDescription .options .options-fixes .segment-container .text-secondary {
+  font-family: "Hind Siliguri", sans-serif;
+}
+
+.segmentDescription .options .options-fixes .segment-container .text-secondary span {
+  color: black;
+  position: relative;
+}
+
+.segmentDescription .options .options-to-choose .label .main {
+  color: #cf2547;
+}
+
+.segmentDescription .options .options-to-choose ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.segmentDescription .options .options-to-choose ul li {
+  font-family: "Hind Siliguri", sans-serif;
+  color: #000;
+}
+
+.segmentDescription .options .options-to-choose ul li i {
+  color: #cb952b;
+}
+
+.segmentDescription .options .price {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.segmentDescription .options .price button {
+  background-color: #cf2547;
+  color: white;
+  font-family: "Hind Siliguri", sans-serif;
+  border: none;
+  border-radius: 5px;
+}
+
+.segmentDescription .options .price .base-price {
+  color: #d00b41;
+}
+
+.segmentDescription .options .price .base-price::before {
+  content: "À partir de";
+  color: black;
+  position: absolute;
+}
+
+@media screen and (max-width: 250px) {
+  .segmentDescription {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  .segmentDescription h4 {
+    font-size: 15px;
+  }
+  .segmentDescription .options .title h4 {
+    font-size: 17px;
+  }
+  .segmentDescription .options .title img {
+    width: 70px;
+  }
+  .segmentDescription .options .options-fixes .label {
+    padding-left: 3px;
+    margin-bottom: 8px;
+  }
+  .segmentDescription .options .options-fixes .label .main {
+    font-size: 14px;
+  }
+  .segmentDescription .options .options-fixes .label .secondary {
+    font-size: 14px;
+  }
+  .segmentDescription .options .options-fixes .segment-container {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment {
+    margin-bottom: 15px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .arrow {
+    font-size: 20px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port {
+    padding: 4px;
+    border-radius: 4px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port span {
+    font-size: 11px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .text-secondary {
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+  .segmentDescription .options .options-to-choose .label .main {
+    font-size: 14px;
+  }
+  .segmentDescription .options .options-to-choose ul {
+    padding: 4px;
+  }
+  .segmentDescription .options .options-to-choose ul li {
+    margin-top: 4px;
+    font-size: 12px;
+  }
+  .segmentDescription .options .options-to-choose ul li i {
+    margin-right: 2px;
+    position: relative;
+    bottom: 0.5px;
+  }
+  .segmentDescription .options .price {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+  .segmentDescription .options .price button {
+    padding: 5px 10px 5px 10px;
+    font-size: 14px;
+  }
+  .segmentDescription .options .price .base-price {
+    font-size: 20px;
+  }
+  .segmentDescription .options .price .base-price::before {
+    font-size: 11.5px;
+    bottom: 26px;
+  }
+}
+
+@media screen and (min-width: 250px) and (max-width: 300px) {
+  .segmentDescription {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  .segmentDescription h4 {
+    font-size: 18px;
+  }
+  .segmentDescription .options .title h4 {
+    font-size: 20px;
+  }
+  .segmentDescription .options .title img {
+    width: 70px;
+  }
+  .segmentDescription .options .options-fixes .label {
+    padding-left: 3px;
+    margin-bottom: 8px;
+  }
+  .segmentDescription .options .options-fixes .label .main {
+    font-size: 17px;
+  }
+  .segmentDescription .options .options-fixes .label .secondary {
+    font-size: 16px;
+  }
+  .segmentDescription .options .options-fixes .segment-container {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment {
+    margin-bottom: 15px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-plan {
+    font-size: 17px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .arrow {
+    font-size: 20px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port {
+    padding: 4px;
+    border-radius: 4px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port span {
+    font-size: 12px;
+    top: 1.5px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .text-secondary {
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+  .segmentDescription .options .options-to-choose .label .main {
+    font-size: 17px;
+  }
+  .segmentDescription .options .options-to-choose ul {
+    padding: 4px;
+  }
+  .segmentDescription .options .options-to-choose ul li {
+    margin-top: 4px;
+    font-size: 14.5px;
+  }
+  .segmentDescription .options .options-to-choose ul li i {
+    margin-right: 2px;
+    position: relative;
+    bottom: 0.5px;
+  }
+  .segmentDescription .options .price {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+  .segmentDescription .options .price button {
+    padding: 5px 17px 5px 17px;
+    font-size: 16px;
+  }
+  .segmentDescription .options .price .base-price {
+    font-size: 23px;
+  }
+  .segmentDescription .options .price .base-price::before {
+    font-size: 11.5px;
+    bottom: 26px;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 430px) {
+  .segmentDescription {
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+  .segmentDescription h4 {
+    font-size: 18px;
+  }
+  .segmentDescription .options .title h4 {
+    font-size: 22px;
+  }
+  .segmentDescription .options .title img {
+    width: 80px;
+  }
+  .segmentDescription .options .options-fixes .label {
+    padding-left: 3px;
+    margin-bottom: 8px;
+  }
+  .segmentDescription .options .options-fixes .label .main {
+    font-size: 18.5px;
+  }
+  .segmentDescription .options .options-fixes .label .secondary {
+    font-size: 17px;
+  }
+  .segmentDescription .options .options-fixes .segment-container {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment {
+    margin-bottom: 15px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-plan {
+    font-size: 20px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .arrow {
+    font-size: 20px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port {
+    padding: 4px;
+    border-radius: 4px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port span {
+    font-size: 14px;
+    top: 1.5px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .text-secondary {
+    font-size: 15.5px;
+    margin-bottom: 16px;
+  }
+  .segmentDescription .options .options-to-choose .label .main {
+    font-size: 18.5px;
+  }
+  .segmentDescription .options .options-to-choose ul {
+    padding: 4px;
+  }
+  .segmentDescription .options .options-to-choose ul li {
+    margin-top: 4px;
+    font-size: 15px;
+  }
+  .segmentDescription .options .options-to-choose ul li i {
+    margin-right: 2px;
+    position: relative;
+    bottom: 0.5px;
+  }
+  .segmentDescription .options .price {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+  .segmentDescription .options .price button {
+    padding: 5px 23px 5px 23px;
+    font-size: 16px;
+  }
+  .segmentDescription .options .price .base-price {
+    font-size: 24px;
+  }
+  .segmentDescription .options .price .base-price::before {
+    font-size: 11.5px;
+    bottom: 26px;
+  }
+}
+
+@media screen and (min-width: 430px) and (max-width: 568px) {
+  .segmentDescription {
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+  .segmentDescription .options .title h4 {
+    font-size: 24px;
+  }
+  .segmentDescription .options .title img {
+    width: 87px;
+  }
+  .segmentDescription .options .options-fixes .label {
+    padding-left: 3px;
+  }
+  .segmentDescription .options .options-fixes .label .main {
+    font-size: 20.5px;
+  }
+  .segmentDescription .options .options-fixes .label .secondary {
+    font-size: 19px;
+  }
+  .segmentDescription .options .options-fixes .segment-container {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment {
+    margin-bottom: 19px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-plan {
+    font-size: 25px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .arrow {
+    font-size: 28px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port {
+    padding: 4px;
+    border-radius: 4px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port span {
+    font-size: 16px;
+    top: 1.5px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port .icon-down {
+    font-size: 19px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .text-secondary {
+    font-size: 18.5px;
+    margin-top: 14px;
+    padding-left: 11px;
+  }
+  .segmentDescription .options .options-to-choose .label .main {
+    font-size: 20.5px;
+  }
+  .segmentDescription .options .options-to-choose ul {
+    padding: 4px;
+  }
+  .segmentDescription .options .options-to-choose ul li {
+    margin-top: 4px;
+    font-size: 16px;
+    padding-left: 11px;
+  }
+  .segmentDescription .options .options-to-choose ul li i {
+    margin-right: 2px;
+    position: relative;
+    bottom: 0.5px;
+  }
+  .segmentDescription .options .price {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+  .segmentDescription .options .price button {
+    padding: 7px 35px 7px 35px;
+    font-size: 19px;
+  }
+  .segmentDescription .options .price .base-price {
+    font-size: 30px;
+  }
+  .segmentDescription .options .price .base-price::before {
+    font-size: 13px;
+    bottom: 37px;
+  }
+}
+
+@media screen and (min-width: 568px) and (max-width: 768px) {
+  .segmentDescription {
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+  .segmentDescription .options .title h4 {
+    font-size: 26px;
+  }
+  .segmentDescription .options .title img {
+    width: 102px;
+  }
+  .segmentDescription .options .options-fixes .label {
+    padding-left: 3px;
+  }
+  .segmentDescription .options .options-fixes .label .main {
+    font-size: 22.5px;
+  }
+  .segmentDescription .options .options-fixes .label .secondary {
+    font-size: 20px;
+  }
+  .segmentDescription .options .options-fixes .segment-container {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment {
+    margin-bottom: 19px;
+    padding-right: 23%;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-plan {
+    font-size: 25px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .arrow {
+    font-size: 28px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port {
+    border-radius: 4px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port span {
+    font-size: 16px;
+    top: 1.5px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port .icon-down {
+    font-size: 19px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .text-secondary {
+    font-size: 20.5px;
+    margin-top: 14px;
+    padding-left: 11px;
+  }
+  .segmentDescription .options .options-to-choose .label .main {
+    font-size: 22.5px;
+  }
+  .segmentDescription .options .options-to-choose ul {
+    padding: 4px;
+  }
+  .segmentDescription .options .options-to-choose ul li {
+    margin-top: 4px;
+    font-size: 17.5px;
+    padding-left: 11px;
+  }
+  .segmentDescription .options .options-to-choose ul li i {
+    margin-right: 2px;
+    position: relative;
+    bottom: 0.5px;
+  }
+  .segmentDescription .options .price {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+  .segmentDescription .options .price button {
+    padding: 7px 45px 7px 45px;
+    font-size: 19px;
+  }
+  .segmentDescription .options .price .base-price {
+    font-size: 30px;
+  }
+  .segmentDescription .options .price .base-price::before {
+    font-size: 13px;
+    bottom: 37px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .segmentDescription {
+    margin-top: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .segmentDescription h4 {
+    font-size: 20px;
+  }
+  .segmentDescription .options .title h4 {
+    font-size: 22px;
+  }
+  .segmentDescription .options .title img {
+    width: 26%;
+  }
+  .segmentDescription .options .options-fixes .label {
+    padding-left: 3px;
+    margin-bottom: 8px;
+  }
+  .segmentDescription .options .options-fixes .label .main {
+    font-size: 18.5px;
+  }
+  .segmentDescription .options .options-fixes .label .secondary {
+    font-size: 17px;
+  }
+  .segmentDescription .options .options-fixes .segment-container {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment {
+    margin-bottom: 15px;
+    padding-right: 17%;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .arrow svg {
+    width: 26px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port {
+    padding-left: 16px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port .air-plan svg {
+    width: 26px;
+    right: 12px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port span {
+    font-size: 12px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port .icon-down {
+    left: 12px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port-list .cust-select .select-container .value {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port-list .cust-select .select-container .value .icon-label svg {
+    width: 26px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port-list .cust-select .select-container .value .label {
+    font-size: 12px;
+    bottom: 6px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port-list .cust-select .select-container .items {
+    top: 107%;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port-list .cust-select .select-container .items ul li {
+    font-size: 13px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .text-secondary {
+    font-size: 15.5px;
+    margin-bottom: 16px;
+  }
+  .segmentDescription .options .options-to-choose .label .main {
+    font-size: 18.5px;
+  }
+  .segmentDescription .options .options-to-choose ul {
+    padding: 4px;
+  }
+  .segmentDescription .options .options-to-choose ul li {
+    margin-top: 4px;
+    font-size: 15px;
+  }
+  .segmentDescription .options .options-to-choose ul li i {
+    margin-right: 2px;
+    position: relative;
+    bottom: 0.5px;
+  }
+  .segmentDescription .options .price {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+  .segmentDescription .options .price button {
+    padding: 5px 23px 5px 23px;
+    font-size: 16px;
+  }
+  .segmentDescription .options .price .base-price {
+    font-size: 24px;
+  }
+  .segmentDescription .options .price .base-price::before {
+    font-size: 11.5px;
+    bottom: 26px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .segmentDescription {
+    margin-top: 80px;
+    margin-left: 29px;
+    margin-right: 29px;
+  }
+  .segmentDescription h4 {
+    font-size: 20px;
+  }
+  .segmentDescription .options .title h4 {
+    font-size: 22px;
+  }
+  .segmentDescription .options .title img {
+    width: 26%;
+  }
+  .segmentDescription .options .options-fixes {
+    padding-left: 5px;
+  }
+  .segmentDescription .options .options-fixes .label {
+    padding-left: 3px;
+    margin-bottom: 8px;
+  }
+  .segmentDescription .options .options-fixes .label .main {
+    font-size: 18.5px;
+  }
+  .segmentDescription .options .options-fixes .label .secondary {
+    font-size: 17px;
+  }
+  .segmentDescription .options .options-fixes .segment-container {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment {
+    margin-bottom: 21px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .arrow svg {
+    width: 26px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port .air-plan svg {
+    width: 35px;
+    position: relative;
+    right: 12px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port span {
+    font-size: 13px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port .icon-down {
+    position: relative;
+    left: 12px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port-list .cust-select .select-container .value {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port-list .cust-select .select-container .value .icon-label svg {
+    width: 26px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port-list .cust-select .select-container .value .label {
+    font-size: 13px;
+    bottom: 6px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port-list .cust-select .select-container .items {
+    top: 125%;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port-list .cust-select .select-container .items ul li {
+    font-size: 13px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .text-secondary {
+    font-size: 15.5px;
+    margin-bottom: 16px;
+  }
+  .segmentDescription .options .options-to-choose {
+    padding-left: 5px;
+  }
+  .segmentDescription .options .options-to-choose .label .main {
+    font-size: 18.5px;
+  }
+  .segmentDescription .options .options-to-choose ul {
+    padding: 4px;
+  }
+  .segmentDescription .options .options-to-choose ul li {
+    margin-top: 4px;
+    font-size: 15px;
+  }
+  .segmentDescription .options .options-to-choose ul li i {
+    margin-right: 2px;
+    position: relative;
+    bottom: 0.5px;
+  }
+  .segmentDescription .options .price {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+  .segmentDescription .options .price button {
+    padding: 5px 23px 5px 23px;
+    font-size: 16px;
+  }
+  .segmentDescription .options .price .base-price {
+    font-size: 24px;
+  }
+  .segmentDescription .options .price .base-price::before {
+    font-size: 11.5px;
+    bottom: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .segmentDescription {
+    margin-top: 80px;
+    margin-left: 63px;
+    margin-right: 63px;
+  }
+  .segmentDescription h4 {
+    font-size: 20px;
+  }
+  .segmentDescription .options .title h4 {
+    font-size: 22px;
+  }
+  .segmentDescription .options .title img {
+    width: 26%;
+  }
+  .segmentDescription .options .options-fixes {
+    padding-left: 5px;
+  }
+  .segmentDescription .options .options-fixes .label {
+    padding-left: 3px;
+    margin-bottom: 8px;
+  }
+  .segmentDescription .options .options-fixes .label .main {
+    font-size: 18.5px;
+  }
+  .segmentDescription .options .options-fixes .label .secondary {
+    font-size: 17px;
+  }
+  .segmentDescription .options .options-fixes .segment-container {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment {
+    margin-bottom: 21px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .arrow svg {
+    width: 26px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port .air-plan svg {
+    width: 35px;
+    position: relative;
+    right: 12px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port span {
+    font-size: 13px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port .icon-down {
+    position: relative;
+    left: 12px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port-list .cust-select .select-container .value {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port-list .cust-select .select-container .value .icon-label svg {
+    width: 26px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port-list .cust-select .select-container .value .label {
+    font-size: 13px;
+    bottom: 6px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port-list .cust-select .select-container .items {
+    top: 115%;
+  }
+  .segmentDescription .options .options-fixes .segment-container .segment .air-port-list .cust-select .select-container .items ul li {
+    font-size: 14px;
+  }
+  .segmentDescription .options .options-fixes .segment-container .text-secondary {
+    font-size: 15.5px;
+    margin-bottom: 16px;
+  }
+  .segmentDescription .options .options-to-choose {
+    padding-left: 5px;
+  }
+  .segmentDescription .options .options-to-choose .label .main {
+    font-size: 18.5px;
+  }
+  .segmentDescription .options .options-to-choose ul {
+    padding: 4px;
+  }
+  .segmentDescription .options .options-to-choose ul li {
+    margin-top: 4px;
+    font-size: 15px;
+  }
+  .segmentDescription .options .options-to-choose ul li i {
+    margin-right: 2px;
+    position: relative;
+    bottom: 0.5px;
+  }
+  .segmentDescription .options .price {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+  .segmentDescription .options .price button {
+    padding: 5px 23px 5px 23px;
+    font-size: 16px;
+  }
+  .segmentDescription .options .price .base-price {
+    font-size: 24px;
+  }
+  .segmentDescription .options .price .base-price::before {
+    font-size: 11.5px;
+    bottom: 26px;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  .segmentDescription .segment {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .segmentDescription .segment .air-port {
+    width: 70% !important;
+  }
+  .segmentDescription .price {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .segmentDescription .price .base-price {
+    margin-bottom: 25px;
+  }
+  .segmentDescription .price .base-price::before {
+    font-size: 11.5px;
+    bottom: 80px !important;
+  }
+}
+/*# sourceMappingURL=map-vol.css.map */

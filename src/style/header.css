@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dongle&family=Hind+Siliguri:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dongle&family=Hind+Siliguri:wght@300;400;500;600&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+.btn {
+  border: none;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: white;
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+header .logo .hl {
+  border-right: 1px solid #707070;
+  opacity: 0.35;
+  position: relative;
+}
+
+header .logo .one-world img {
+  position: relative;
+}
+
+header ul.menu-small-device .menu-icon {
+  color: black;
+}
+
+header ul.menu-large-device {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header ul.menu-large-device li {
+  font-family: "Sora", sans-serif;
+}
+
+header ul.menu-large-device li button {
+  background-color: #d00b41;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  color: white !important;
+}
+
+header ul.menu-large-device li button i {
+  position: relative;
+}
+
+@media screen and (max-width: 250px) {
+  header {
+    padding: 7px 7px 7px 3px;
+  }
+  header .logo .hl {
+    border-right: 1px solid #707070;
+    opacity: 0.35;
+    height: 19px;
+    position: relative;
+    top: 7px;
+    margin-left: 8px;
+    width: 0px;
+  }
+  header .logo .ram img {
+    width: 40px;
+  }
+  header .logo .one-world img {
+    width: 22px;
+    margin-left: 10px;
+    position: relative;
+    top: 1px;
+  }
+  header ul.menu-large-device {
+    display: none;
+  }
+  header ul.menu-small-device {
+    display: inline;
+  }
+  header ul.menu-small-device .menu-icon {
+    font-size: 18px;
+    position: relative;
+    bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 250px) and (max-width: 300px) {
+  header {
+    padding: 7px 7px 7px 3px;
+  }
+  header .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  header .logo .hl {
+    border-right: 1px solid #707070;
+    opacity: 0.35;
+    height: 19px;
+    position: relative;
+    top: 7px;
+    margin-left: 8px;
+    width: 0px;
+  }
+  header .logo .ram img {
+    width: 48px;
+  }
+  header .logo .one-world img {
+    width: 25.5px;
+    margin-left: 10px;
+    position: relative;
+    top: 3px;
+  }
+  header ul.menu-large-device {
+    display: none;
+  }
+  header ul.menu-small-device {
+    display: inline;
+  }
+  header ul.menu-small-device .menu-icon {
+    font-size: 19px;
+    position: relative;
+    bottom: 1.5px;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 430px) {
+  header {
+    padding: 7px 7px 7px 3px;
+  }
+  header .logo .hl {
+    border-right: 1px solid #707070;
+    opacity: 0.35;
+    height: 22px;
+    position: relative;
+    top: 7px;
+    margin-left: 8px;
+  }
+  header .logo .ram img {
+    width: 49px;
+  }
+  header .logo .one-world img {
+    width: 26.5px;
+    margin-left: 10px;
+    position: relative;
+    top: 4px;
+  }
+  header ul.menu-large-device {
+    display: none;
+  }
+  header ul.menu-small-device {
+    display: inline;
+  }
+  header ul.menu-small-device .menu-icon {
+    font-size: 20px;
+    position: relative;
+    bottom: 1.25px;
+  }
+}
+
+@media screen and (min-width: 430px) and (max-width: 568px) {
+  header {
+    padding: 7px 7px 7px 3px;
+  }
+  header .logo .hl {
+    height: 35px;
+    top: 2px;
+    margin-left: 8px;
+  }
+  header .logo .ram img {
+    width: 55px;
+  }
+  header .logo .one-world img {
+    width: 35px;
+    margin-left: 10px;
+    top: 2px;
+  }
+  header ul.menu-large-device {
+    display: none;
+  }
+  header ul.menu-small-device {
+    display: inline;
+  }
+  header ul.menu-small-device .menu-icon {
+    font-size: 20px;
+    position: relative;
+    bottom: 1.5px;
+  }
+}
+
+@media screen and (min-width: 568px) and (max-width: 768px) {
+  header {
+    padding: 7px 7px 7px 3px;
+  }
+  header .logo .hl {
+    height: 35px;
+    top: 5px;
+    margin-left: 8px;
+  }
+  header .logo .ram img {
+    width: 62px;
+  }
+  header .logo .one-world img {
+    width: 35px;
+    margin-left: 10px;
+    top: 5px;
+  }
+  header ul.menu-large-device {
+    display: none;
+  }
+  header ul.menu-small-device {
+    display: inline;
+  }
+  header ul.menu-small-device .menu-icon {
+    font-size: 22px;
+    position: relative;
+    bottom: 1.5px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  header {
+    padding: 10px;
+  }
+  header .logo .hl {
+    height: 35px;
+    top: 4px;
+    margin-left: 8px;
+  }
+  header .logo .ram img {
+    width: 62px;
+  }
+  header .logo .one-world img {
+    width: 35px;
+    margin-left: 10px;
+    top: 4px;
+  }
+  header ul.menu-large-device {
+    width: 50%;
+  }
+  header ul.menu-large-device li {
+    font-size: 12.5px;
+    font-family: "Sora", sans-serif;
+  }
+  header ul.menu-large-device li button {
+    background-color: #d00b41;
+    -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    color: white !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 7px 7px 7px 7px;
+  }
+  header ul.menu-large-device li button i {
+    bottom: 2px;
+    margin-right: 5px;
+    font-size: 18px;
+  }
+  header ul.menu-large-device li button span {
+    font-size: 12.5px;
+  }
+  header ul.menu-small-device {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  header {
+    padding: 10px;
+  }
+  header .logo .hl {
+    border-right: 1px solid #707070;
+    opacity: 0.35;
+    height: 35px;
+    position: relative;
+    top: 7px;
+    margin-left: 8px;
+  }
+  header .logo .ram img {
+    width: 72px;
+  }
+  header .logo .one-world img {
+    width: 40px;
+    margin-left: 10px;
+    top: 5px;
+  }
+  header ul.menu-large-device {
+    width: 42%;
+  }
+  header ul.menu-large-device li {
+    font-size: 13.5px;
+  }
+  header ul.menu-large-device li button i {
+    margin-right: 5px;
+    font-size: 20px;
+  }
+  header ul.menu-large-device li button span {
+    font-size: 13.5px;
+  }
+  header ul.menu-small-device {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    padding: 10px;
+  }
+  header .logo .hl {
+    border-right: 1px solid #707070;
+    opacity: 0.35;
+    height: 35px;
+    position: relative;
+    top: 7px;
+    margin-left: 8px;
+  }
+  header .logo .ram img {
+    width: 72px;
+  }
+  header .logo .one-world img {
+    width: 40px;
+    margin-left: 10px;
+    top: 5px;
+  }
+  header ul.menu-large-device {
+    width: 37%;
+  }
+  header ul.menu-large-device li {
+    font-size: 13.5px;
+  }
+  header ul.menu-large-device li button i {
+    margin-right: 5px;
+    font-size: 20px;
+  }
+  header ul.menu-large-device li button span {
+    font-size: 13.5px;
+  }
+  header ul.menu-small-device {
+    display: none;
+  }
+}
+
+/*
+@media screen and (max-width: 300px){
+
+}
+@media screen and (min-width: 300px) and (max-width: 430px){
+
+}
+@media screen and (min-width: 430px) and (max-width:768px ){
+
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+}
+@media screen and (min-width: 1200px){
+
+}
+*/
+/*# sourceMappingURL=header.css.map */

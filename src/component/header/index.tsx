@@ -1,20 +1,31 @@
 import { BiUser } from 'react-icons/bi';
 import { BiUserCircle } from 'react-icons/bi';
+import { FiMenu } from "react-icons/fi";
+import { useSelector, useDispatch } from 'react-redux';
+import { Istate } from '../../store';
+import { User } from '../../type';
 
 const HeaderInder = () => {
-    const image = ['./assets/images/logo.png', './assets/images/oneworld-logo.png']
+
+    const image = ['./assets/images/logo-ram.svg', './assets/images/oneworld.png']
+    const isAuthenticated: boolean = useSelector((state: Istate) => state.auth.isAuthenticated);
+    const user: User = useSelector((state: Istate): User => {
+        return { firstName: state.auth.firstName, lastName: state.auth.lastName }
+    })
+
     return (
-        <header className="bg-white">
+        <header>
             <div className="d-flex justify-content-between align-items-center ">
-                <div className="logo col-6">
+                <div className="logo">
                     <div className="ram">
-                        <img src={image[0]} />
+                        <img src={image[0]} alt="" />
                     </div>
+                    <div className="hl" />
                     <div className="one-world">
-                        <img src={image[1]} />
+                        <img src={image[1]} alt="" />
                     </div>
                 </div>
-                <ul className="d-flex justify-content-between col-6">
+                <ul className="menu-large-device">
                     <li>
                         Comment ça fonctionne ?
                     </li>
@@ -22,9 +33,19 @@ const HeaderInder = () => {
                         FAQ
                     </li>
                     <li>
-                        <button className='btn btn-sign-in'>
-                            <i><BiUserCircle /></i><span>Connexion</span>
-                        </button>
+                        {!isAuthenticated ?
+                            <button className='btn btn-sign-in'>
+                                <i><BiUserCircle /></i><span>Connexion</span>
+                            </button>
+                            :
+                            <span>{user.firstName} {user.lastName}</span>
+                        }
+
+                    </li>
+                </ul>
+                <ul className="menu-small-device">
+                    <li className="menu-icon">
+                        <FiMenu />
                     </li>
                 </ul>
             </div>

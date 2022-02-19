@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dongle&family=Hind+Siliguri:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dongle&family=Hind+Siliguri:wght@300;400;500;600&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+.btn {
+  border: none;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.description ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.description h4 {
+  font-family: "Sora", sans-serif;
+  color: #707070;
+  font-weight: bold;
+}
+
+.description h2 {
+  font-family: "Sora", sans-serif;
+  font-weight: 300;
+  color: #0d0d0d;
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 300px) {
+  .description ul.large-device {
+    display: none;
+  }
+  .description h2.large-device {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 430px) {
+  .description ul.large-device {
+    display: none;
+  }
+  .description h2.large-device {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 430px) and (max-width: 768px) {
+  .description ul.large-device {
+    display: none;
+  }
+  .description h2.large-device {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .description h2 {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+  .description ul.large-device {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: white;
+  }
+  .description ul.large-device li {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    -webkit-box-shadow: 1px 1px 13px #0000002e;
+            box-shadow: 1px 1px 13px #0000002e;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .description ul.large-device li i {
+    background-color: #d00b41;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    color: white;
+    padding: 2px 7px;
+    font-size: 20px;
+    border-radius: 6px;
+    margin-right: 9px;
+  }
+  .description ul.large-device li i svg {
+    position: relative;
+    bottom: 2.5px;
+  }
+  .description ul.large-device li h6 {
+    font-family: "Sora", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #707070;
+  }
+  .description ul.large-device li p {
+    font-family: "Sora", sans-serif;
+    color: #707070;
+    font-weight: 300;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .description h2 {
+    margin-top: 92px;
+    margin-bottom: 92px;
+  }
+  .description ul.large-device {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: white;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 0;
+  }
+  .description ul.large-device li {
+    background-color: white;
+    /* padding: 3px; */
+    border-radius: 15px;
+    -webkit-box-shadow: 1px 1px 13px #0000002e;
+            box-shadow: 1px 1px 13px #0000002e;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 16px;
+    margin-left: 15px;
+    /* padding-left: 40px; */
+    /* padding-right: 43px; */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+  }
+  .description ul.large-device li i {
+    background-color: #d00b41;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    color: white;
+    padding: 2px 7px;
+    font-size: 20px;
+    border-radius: 6px;
+    margin-right: 9px;
+  }
+  .description ul.large-device li i svg {
+    position: relative;
+    bottom: 2.5px;
+  }
+  .description ul.large-device li h6 {
+    font-family: "Sora", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #707070;
+  }
+  .description ul.large-device li p {
+    font-family: "Sora", sans-serif;
+    color: #707070;
+    font-weight: 300;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .description h2 {
+    margin-top: 92px;
+    margin-bottom: 92px;
+  }
+  .description ul.large-device {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: white;
+    margin-left: 55px;
+    margin-right: 55px;
+  }
+  .description ul.large-device li {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    -webkit-box-shadow: 1px 1px 13px #0000002e;
+            box-shadow: 1px 1px 13px #0000002e;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .description ul.large-device li i {
+    background-color: #d00b41;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    color: white;
+    padding: 2px 7px;
+    font-size: 24px;
+    border-radius: 6px;
+    margin-right: 9px;
+  }
+  .description ul.large-device li i svg {
+    position: relative;
+    bottom: 2.5px;
+  }
+  .description ul.large-device li h6 {
+    font-family: "Sora", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #707070;
+  }
+  .description ul.large-device li p {
+    font-family: "Sora", sans-serif;
+    color: #707070;
+    font-weight: 300;
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=description.css.map */
