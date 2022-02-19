@@ -2,7 +2,7 @@
 .configuration{
     padding-top: 25px;
     padding-bottom: 25px;
-    form{
+    .form-date{
         background: #61374e;
         filter: drop-shadow(4px 4px 24px rgba(0, 0, 0, 0.16));
         padding: 33px 16px;
@@ -193,7 +193,56 @@
         span{
             font-size: 22px;    
         }
-        
+    }
+    .formContact{
+        display: block;
+        margin: auto;
+        border-radius: 9px;
+        border: 1px solid #d1d1d1;
+        padding: 24px;
+        background-color: white;
+        h6{
+            font-family: $font-sora;
+            font-weight: 600;
+            text-align: left;
+            color: #0d0d0d;
+            opacity: 0.9;
+        }
+        span.warning{
+            font-family: $font-sora;
+            font-weight: normal;
+            text-align: left;
+            color: #ba182c;
+        }
+        .field{
+            position: relative;
+            input{
+                border-radius: 9px;
+                background: #fcfcfc;
+                border: 0.25px solid #707070;
+                padding: 13px;
+                margin-top: 56px !important;
+                width: 100%;
+                display: block;
+                margin: auto;
+            }
+            label{
+                font-family: $font-sora;
+                font-weight: normal;
+                text-align: left;
+                position: absolute;
+                bottom: 52px;
+            }
+            i{
+                position: absolute;
+                right: 7px;
+                top: 25%;
+                img{
+                    width: 30px;
+                }
+            }
+        }
+
     }
 
 

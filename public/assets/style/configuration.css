@@ -11,7 +11,7 @@
   padding-bottom: 25px;
 }
 
-.configuration form {
+.configuration .form-date {
   background: #61374e;
   -webkit-filter: drop-shadow(4px 4px 24px rgba(0, 0, 0, 0.16));
           filter: drop-shadow(4px 4px 24px rgba(0, 0, 0, 0.16));
@@ -19,7 +19,7 @@
   border-radius: 10px;
 }
 
-.configuration form .from-inputs > div {
+.configuration .form-date .from-inputs > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,17 +29,17 @@
   padding: 10px;
 }
 
-.configuration form label {
+.configuration .form-date label {
   position: absolute;
   top: 17px;
   color: white;
 }
 
-.configuration form i {
+.configuration .form-date i {
   color: white;
 }
 
-.configuration form .btn-submit {
+.configuration .form-date .btn-submit {
   border-radius: 10px;
   background: -webkit-gradient(linear, left top, left bottom, from(#c20831), to(#f87988));
   background: linear-gradient(#c20831 0%, #f87988 100%);
@@ -50,17 +50,17 @@
   bottom: 4px;
 }
 
-.configuration form .btn-submit i {
+.configuration .form-date .btn-submit i {
   position: relative;
   bottom: 6.5px;
 }
 
-.configuration form .btn-switch {
+.configuration .form-date .btn-switch {
   position: relative;
   top: 10px;
 }
 
-.configuration form .btn-switch i {
+.configuration .form-date .btn-switch i {
   font-size: 25px;
 }
 
@@ -262,5 +262,62 @@
 
 .configuration .total span {
   font-size: 22px;
+}
+
+.configuration .formContact {
+  display: block;
+  margin: auto;
+  border-radius: 9px;
+  border: 1px solid #d1d1d1;
+  padding: 24px;
+  background-color: white;
+}
+
+.configuration .formContact h6 {
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+  text-align: left;
+  color: #0d0d0d;
+  opacity: 0.9;
+}
+
+.configuration .formContact span.warning {
+  font-family: "Sora", sans-serif;
+  font-weight: normal;
+  text-align: left;
+  color: #ba182c;
+}
+
+.configuration .formContact .field {
+  position: relative;
+}
+
+.configuration .formContact .field input {
+  border-radius: 9px;
+  background: #fcfcfc;
+  border: 0.25px solid #707070;
+  padding: 13px;
+  margin-top: 56px !important;
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.configuration .formContact .field label {
+  font-family: "Sora", sans-serif;
+  font-weight: normal;
+  text-align: left;
+  position: absolute;
+  bottom: 52px;
+}
+
+.configuration .formContact .field i {
+  position: absolute;
+  right: 7px;
+  top: 25%;
+}
+
+.configuration .formContact .field i img {
+  width: 30px;
 }
 /*# sourceMappingURL=configuration.css.map */
